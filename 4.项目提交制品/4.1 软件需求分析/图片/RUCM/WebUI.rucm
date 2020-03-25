@@ -1,0 +1,3827 @@
+{
+  "lmf.version": "1.1",
+  "reference": [
+    {"path": "<root>.modelElements[3]"},
+    {"path": "<root>.modelElements[18]"},
+    {"path": "<root>.modelElements[1]"},
+    {"path": "<root>.modelElements[17]"},
+    {"path": "<root>.modelElements[7]"},
+    {"path": "<root>.modelElements[10]"},
+    {"path": "<root>.modelElements[9]"},
+    {"path": "<root>.modelElements[8]"},
+    {"path": "<root>.modelElements[16]"},
+    {"path": "<root>.modelElements[15]"}
+  ],
+  "root": {
+    "type": "UCModel",
+    "content": {
+      "name": {
+        "type": "<string>",
+        "content": ""
+      },
+      "description": {
+        "type": "<string>",
+        "content": ""
+      },
+      "modelElements": [
+        {
+          "type": "UseCase",
+          "content": {
+            "extend": [
+              {
+                "type": "Extend",
+                "content": {
+                  "condition": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "extension": "&0",
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  }
+                }
+              },
+              {
+                "type": "Extend",
+                "content": {
+                  "condition": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "extension": "&1",
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  }
+                }
+              }
+            ],
+            "name": {
+              "type": "<string>",
+              "content": "浏览爬虫列表"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统成功加载爬虫列表"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统向用户返回爬虫列表"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入scrapy客户端"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择浏览爬虫功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取当前爬虫列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查看系统内现有的爬虫"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "user"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Relationship",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": ""
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "过滤关键字搜索"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "得到爬虫列表"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户得到爬虫列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户输入关键字"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "得到含有关键字信息的爬虫列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "根据关键字在得到的爬虫列表中进行检索"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "添加爬虫任务"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "进入管理爬虫界面"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入管理爬虫界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择添加爬虫任功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择添加爬虫任务功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户配置爬虫任务"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户将新的爬虫任务添加到系统中"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "添加新的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "选择爬虫模板"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "返回添加任务界面"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 2
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 2
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS 2"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统提示当前没有模板"
+                        }
+                      }
+                    }]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统内拥有若干模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "用户为新任务成功添加模板"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "用户进入添加爬虫任务界面用户选择一个现有的爬虫模板"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "模板有效"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入添加爬虫任务界面用户选择一个现有的爬虫模板VALIDATES THAT模板有效"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "用户选择一个爬虫模板"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "模板有效"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择一个爬虫模板VALIDATES THAT模板有效"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统向用户返回一个爬虫模板"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "为新的爬虫任务选择一个爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "配置爬虫方案"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "当前有一个新添加的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "配置成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入添加爬虫任务界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择配置爬虫方案功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户对爬虫任务进行配置"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "为新添加的爬虫任务进行配置"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "查看爬虫进度"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入管理爬虫任务界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择查看爬虫进度功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取当前系统内的爬虫状态"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户得到当前系统内爬虫的状态"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查看当前正在运行的爬虫进度"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "启动爬虫任务"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "启动失败"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS 3"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "爬虫正在运行"
+                        }
+                      }
+                    }]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "有新的爬虫任务被添加"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "启动成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入管理爬虫任务界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户查看当前爬虫任务进度"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "用户选择启动爬虫任务功能启动一个还未被启动的爬虫任务"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "是否有一个未被启动的爬虫任务"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择启动爬虫任务功能启动一个还未被启动的爬虫任务VALIDATES THAT是否有一个未被启动的爬虫任务"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "用户启动爬虫任务"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "爬虫正在运行"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户启动爬虫任务VALIDATES THAT爬虫正在运行"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "启动一个还未被启动的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "暂停爬虫任务"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "暂停失败"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS 3"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "没有正在运行的爬虫任务"
+                        }
+                      }
+                    }]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "有正在运行的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "暂停成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入爬虫管理界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户查看当前爬虫任务进度"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择暂停爬虫任务功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统暂停爬虫任务"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "爬虫任务未在运行"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统暂停爬虫任务VALIDATES THAT爬虫任务未在运行"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "暂停一个正在运行的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "终止爬虫任务"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统内有已经被启动的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "终止任务成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入爬虫管理界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户查看当前爬虫任务进度"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择终止爬虫任务功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统终止该爬虫任务"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "终止一个爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "浏览爬虫结果"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "管理爬虫结果"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入某个爬虫任务的结果管理界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择浏览爬虫结果功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取爬虫结果"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户获得爬虫爬取结果"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "浏览某个爬虫任务的爬取结果"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "保存爬虫结果到本地"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 4
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 4
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS 4"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "保存爬取结果失败"
+                        }
+                      }
+                    }]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "管理爬虫结果"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "保存成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入查询爬虫结果界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择保存爬虫结果到本地"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取爬虫结果"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "用户下载爬虫爬取结果"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "爬虫未能成功运行"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户下载爬虫爬取结果VALIDATES THAT爬虫未能成功运行"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "将某个爬虫任务的爬取结果保存到本地"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "删除爬虫模板"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统内有爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "删除成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员进入管理爬虫模板界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员选择删除爬虫模板功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统删除该模板"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "删除一个现有的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "更新爬虫模板"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统内有爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "更新成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员进入管理爬虫模板界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员选择更新爬虫模板功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员上传更新参数"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取更新后的模板"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "更新一个现有的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "查询爬虫模板"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "查询成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员进入管理爬虫模板界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员选择查询爬虫模板功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取爬虫模板列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查询系统内现有的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "添加爬虫模板"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "添加成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员进入管理爬虫模板界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员选择添加爬虫模板功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员上传爬虫模板"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统保存爬虫模板"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "添加一个新的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "administrator"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "按类别搜索"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统中存在爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户得到系统内目前的爬虫列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "根据条件检索某种类型的爬虫"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "得到新的爬虫列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "按类别检索特定类型的爬虫"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "extend": [
+              {
+                "type": "Extend",
+                "content": {
+                  "condition": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "extension": "&4",
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  }
+                }
+              },
+              {
+                "type": "Extend",
+                "content": {
+                  "condition": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "extension": "&5",
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  }
+                }
+              },
+              {
+                "type": "Extend",
+                "content": {
+                  "condition": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "extension": "&6",
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  }
+                }
+              },
+              {
+                "type": "Extend",
+                "content": {
+                  "condition": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "extension": "&7",
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  }
+                }
+              }
+            ],
+            "name": {
+              "type": "<string>",
+              "content": "查询爬虫任务"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "进入管理爬虫任务界面"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户进入爬虫任务界面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "用户选择查询爬虫任务功能"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取爬虫列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统向用户返回得到的爬虫列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查询目前系统内的所有爬虫"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "include": [
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "includingCase": "&8"
+                }
+              },
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "includingCase": "&9"
+                }
+              }
+            ],
+            "name": {
+              "type": "<string>",
+              "content": "管理爬虫模板"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员进入客户端"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "管理员选择管理爬虫模板功能"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "管理系统内的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

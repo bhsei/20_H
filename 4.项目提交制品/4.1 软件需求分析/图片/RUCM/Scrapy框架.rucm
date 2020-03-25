@@ -1,0 +1,3050 @@
+{
+  "lmf.version": "1.1",
+  "reference": [
+    {"path": "<root>.modelElements[0]"},
+    {"path": "<root>.modelElements[1]"},
+    {"path": "<root>.modelElements[2]"},
+    {"path": "<root>.modelElements[5]"},
+    {"path": "<root>.modelElements[9]"},
+    {"path": "<root>.modelElements[12]"},
+    {"path": "<root>.modelElements[10]"},
+    {"path": "<root>.modelElements[11]"},
+    {"path": "<root>.modelElements[4]"},
+    {"path": "<root>.modelElements[13]"},
+    {"path": "<root>.modelElements[15]"},
+    {"path": "<root>.modelElements[14]"},
+    {"path": "<root>.modelElements[17]"},
+    {"path": "<root>.modelElements[19]"},
+    {"path": "<root>.modelElements[18]"},
+    {"path": "<root>.modelElements[6]"},
+    {"path": "<root>.modelElements[20].specification.basicFlow.steps[2]"},
+    {"path": "<root>.modelElements[20].specification.basicFlow.steps[4]"},
+    {"path": "<root>.modelElements[20].specification.basicFlow.steps[2].natures[1]"},
+    {"path": "<root>.modelElements[20].specification.basicFlow.steps[7]"},
+    {"path": "<root>.modelElements[20].specification.basicFlow.steps[9]"},
+    {"path": "<root>.modelElements[20].specification.basicFlow.steps[7].natures[1]"},
+    {"path": "<root>.modelElements[7]"},
+    {"path": "<root>.modelElements[3]"},
+    {"path": "<root>.modelElements[21].specification.basicFlow.steps[2]"},
+    {"path": "<root>.modelElements[21].specification.basicFlow.steps[4]"},
+    {"path": "<root>.modelElements[21].specification.basicFlow.steps[2].natures[1]"},
+    {"path": "<root>.modelElements[21].specification.basicFlow.steps[7]"},
+    {"path": "<root>.modelElements[21].specification.basicFlow.steps[9]"},
+    {"path": "<root>.modelElements[21].specification.basicFlow.steps[7].natures[1]"}
+  ],
+  "root": {
+    "type": "UCModel",
+    "content": {
+      "name": {
+        "type": "<string>",
+        "content": "Untitled"
+      },
+      "description": {
+        "type": "<string>",
+        "content": "Input description for this model here."
+      },
+      "modelElements": [
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "Spider"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "引擎"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "调度器"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "下载器"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "项目管道"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "爬虫程序开发者"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "Spider中间件"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "下载器中间件"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "发送请求"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "secondaryActors": [
+                  "&0",
+                  "&1",
+                  "&2"
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "爬虫已启动"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "请求已被调度器加入爬取队列"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者在Spider中产生请求"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "引擎从Spider接收请求"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "引擎将请求发送到调度器"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "调度器将请求加入爬取队列"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "在Spider模块产生一个包含URL的Request对象，引擎将其发送到调度器，加入爬取队列"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "使用CSS选择器提取元素"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "请求的页面下载成功"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "爬虫程序开发者得到包含选择结果的新的选择器"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者提供CSS选择器表达式"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Response对象根据CSS选择器表达式返回选择结果"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "解析HTML页面时使用CSS选择器提取需要的部分"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "使用XPath提取元素"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "请求的页面下载成功"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "爬虫程序开发者得到包含选择结果的新的选择器"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者提供XPath表达式"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Response对象根据XPath表达式返回选择结果"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "解析HTML页面时使用XPath提取需要的部分"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "使用正则表达式提取文本"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "请求的页面下载成功"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "爬虫程序开发者得到包含选择结果的新的选择器"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者提供正则表达式"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Response对象根据正则表达式返回选择结果"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "解析HTML页面时使用正则表达式提取需要的文本"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "include": [
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&4",
+                  "includingCase": "&5"
+                }
+              },
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&6",
+                  "includingCase": "&5"
+                }
+              },
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&7",
+                  "includingCase": "&5"
+                }
+              }
+            ],
+            "name": {
+              "type": "<string>",
+              "content": "解析页面"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "secondaryActors": [
+                  "&0",
+                  "&8",
+                  "&1",
+                  "&2"
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "请求的页面下载成功"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "解析产生的Item和请求均被处理完成"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者从Response中提取数据"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider返回产生的Item和请求"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "项目管道处理Item"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "引擎将请求发送到调度器"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "调度器将请求加入爬取队列"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "根据实际需求，在Spider模块的parse方法中使用CSS选择器、XPath和正则表达式从包含在Response对象的HTML页面中提取需要的数据，并以项目(Item)的形式返回"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "存储项目"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&8",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "Spider产生一个项目"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "数据库写入成功"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "项目管道将项目包含的数据写入数据库"
+                        }
+                      }
+                    }]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "将项目保存到数据库"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "丢弃项目"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&8",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "Spider产生一个项目"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "该项目不再进行后续处理"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "项目管道抛出DropItem异常"
+                        }
+                      }
+                    }]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "丢弃一个项目，不再进行后续处理"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "include": [
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&9",
+                  "includingCase": "&10"
+                }
+              },
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&11",
+                  "includingCase": "&10"
+                }
+              }
+            ],
+            "name": {
+              "type": "<string>",
+              "content": "处理项目"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&8",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "Spider产生一个项目"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "项目存储成功或被丢弃"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "IF 满足过滤条件 THEN 丢弃项目 ELSE 存储项目 ENDIF"
+                        }
+                      }
+                    }]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "在自定义的项目管道类中处理Spider模块产生的项目"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "日志输出"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "日志成功打印到控制台或指定文件"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "爬虫程序开发者通过日志API打印日志信息"
+                        }
+                      }
+                    }]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "程序运行中的事件日志记录"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "增加设置"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "secondaryActors": ["&0"],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "Spider成功读取设置文件到settings属性"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者在设置文件中增加键值对"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider读取设置文件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider将设置保存在settings属性中"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "在爬虫程序的系统设置中增加设置"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "读取设置"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "secondaryActors": ["&0"],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "爬虫已启动并读取设置文件"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "Spider成功返回键对应的值"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者提供设置的键"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "Spider"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "键存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider VALIDATES THAT 键存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider返回键对应的值"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "读取爬虫程序的系统设置"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "include": [
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&12",
+                  "includingCase": "&13"
+                }
+              },
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&14",
+                  "includingCase": "&13"
+                }
+              }
+            ],
+            "name": {
+              "type": "<string>",
+              "content": "系统设置"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "Spider成功读取并返回键对应的值"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者在设置文件写入键值对"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者启动爬虫"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider读取设置文件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者从Spider读取设置"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "对爬虫程序进行系统设置"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "添加Spider中间件"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "secondaryActors": [
+                  "&15",
+                  "&0",
+                  "&1"
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "Spider向引擎发送请求/引擎向Spider发送响应"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "请求和响应在Spider与引擎之间正确传递"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者定义Spider中间件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider产生请求"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "DoNature",
+                              "content": {}
+                            },
+                            {
+                              "type": "DoComposite",
+                              "content": {
+                                "doSentence": "&16",
+                                "untilSentence": "&17",
+                                "compositeSentences": [
+                                  "&16",
+                                  "&17"
+                                ]
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "DO"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "IF 请求符合Spider中间件过滤条件 THEN Spider中间件忽略该请求 ELSE Spider中间件将请求传递给下一个Spider中间件 ENDIF"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "UntilNature",
+                              "content": {"untilCondition": {
+                                "type": "<string>",
+                                "content": "没有下一个Spider中间件"
+                              }}
+                            },
+                            {
+                              "type": "ReferenceNature",
+                              "content": {
+                                "referenceNature": "&18",
+                                "referenceSentence": "&16"
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "UNTIL 没有下一个Spider中间件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "引擎将请求发送到调度器"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "引擎接收到响应"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "DoNature",
+                              "content": {}
+                            },
+                            {
+                              "type": "DoComposite",
+                              "content": {
+                                "doSentence": "&19",
+                                "untilSentence": "&20",
+                                "compositeSentences": [
+                                  "&19",
+                                  "&20"
+                                ]
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "DO"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "IF 响应符合Spider中间件过滤条件 THEN Spider中间件忽略该响应 ELSE Spider中间件将响应传递给下一个Spider中间件 ENDIF"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "UntilNature",
+                              "content": {"untilCondition": {
+                                "type": "<string>",
+                                "content": "没有下一个Spider中间件"
+                              }}
+                            },
+                            {
+                              "type": "ReferenceNature",
+                              "content": {
+                                "referenceNature": "&21",
+                                "referenceSentence": "&19"
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "UNTIL 没有下一个Spider中间件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Spider接收响应"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "在自定义的Spider中间件类中处理发送到Spider的响应和从Spider生成的请求和项目"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "添加下载器中间件"
+            },
+            "description": {
+              "type": "<string>",
+              "content": ""
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "secondaryActors": [
+                  "&22",
+                  "&23",
+                  "&1"
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "引擎向下载器发送请求/下载器想引擎发送响应"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "请求和响应在引擎与下载器之间正确传递"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "爬虫程序开发者定义下载器中间件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "引擎产生请求"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "DoNature",
+                              "content": {}
+                            },
+                            {
+                              "type": "DoComposite",
+                              "content": {
+                                "doSentence": "&24",
+                                "untilSentence": "&25",
+                                "compositeSentences": [
+                                  "&24",
+                                  "&25"
+                                ]
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "DO"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "IF 请求符合下载器中间件过滤条件 THEN 下载器中间件忽略该请求 ELSE 下载器中间件将请求传递给下一个下载器中间件 ENDIF"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "UntilNature",
+                              "content": {"untilCondition": {
+                                "type": "<string>",
+                                "content": "没有下一个下载器中间件"
+                              }}
+                            },
+                            {
+                              "type": "ReferenceNature",
+                              "content": {
+                                "referenceNature": "&26",
+                                "referenceSentence": "&24"
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "UNTIL 没有下一个下载器中间件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "下载器下载请求的页面"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "下载器完成下载产生响应"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "DoNature",
+                              "content": {}
+                            },
+                            {
+                              "type": "DoComposite",
+                              "content": {
+                                "doSentence": "&27",
+                                "untilSentence": "&28",
+                                "compositeSentences": [
+                                  "&27",
+                                  "&28"
+                                ]
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "DO"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "IF 响应符合下载器中间件过滤条件 THEN 下载器中间件忽略该响应 ELSE 下载器中间件将响应传递给下一个下载器中间件 ENDIF"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [
+                            {
+                              "type": "UntilNature",
+                              "content": {"untilCondition": {
+                                "type": "<string>",
+                                "content": "没有下一个下载器中间件"
+                              }}
+                            },
+                            {
+                              "type": "ReferenceNature",
+                              "content": {
+                                "referenceNature": "&29",
+                                "referenceSentence": "&27"
+                              }
+                            }
+                          ],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "UNTIL 没有下一个下载器中间件"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "引擎接收响应"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "在自定义的下载器中间件类中处理请求和获取到的响应"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5169 @@
+{
+  "lmf.version": "1.1",
+  "reference": [
+    {"path": "<root>.modelElements[0]"},
+    {"path": "<root>"},
+    {"path": "<root>.modelElements[1]"},
+    {"path": "<root>.modelElements[2]"},
+    {"path": "<root>.modelElements[3]"},
+    {"path": "<root>.modelElements[4]"},
+    {"path": "<root>.modelElements[5]"},
+    {"path": "<root>.modelElements[6]"},
+    {"path": "<root>.modelElements[7]"},
+    {"path": "<root>.modelElements[8]"},
+    {"path": "<root>.modelElements[9]"},
+    {"path": "<root>.modelElements[10]"}
+  ],
+  "root": {
+    "type": "UCModel",
+    "content": {
+      "name": {
+        "type": "<string>",
+        "content": "Scrapyd"
+      },
+      "description": {
+        "type": "<string>",
+        "content": "Scrapyd's Use Case Model"
+      },
+      "modelElements": [
+        {
+          "type": "Actor",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "Scheduler"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "Schedule Program Act as a `Scheduler`"
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "QueryDaemonStatus"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "查询守护进程状态"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用daemonstatus.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取当前运行爬虫数量"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取等待运行爬虫数量"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取完成运行爬虫数量"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取节点名称"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统以JSON输出上述信息"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查询守护进程状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "ListAvailableSpiders"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "列出可用爬虫"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 3"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：项目不存在"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 4"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统查询使用默认版本（最新版本）"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "ResumeStepNature",
+                              "content": {
+                                "step": {
+                                  "type": "<int>",
+                                  "content": 5
+                                },
+                                "flowName": {
+                                  "type": "<string>",
+                                  "content": "Basic Flow"
+                                }
+                              }
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "RESUME STEP Basic Flow 5"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用listspiders.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称、版本"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "版本存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT版本存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出项目对应版本的可用爬虫列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "取得指定项目的（最新）版本的可用的爬虫列表"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "ListCurrentJobs"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "列出当前作业"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": "Basic Flow"
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS Basic Flow 3"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出错误信息：项目不存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "AbortNature",
+                            "content": {}
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "ABORT"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用listjobs.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取等待运行的作业列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取正在运行的作业列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取完成运行的作业列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出上述列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "列出项目的处于等待、运行和完成的作业"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "RunJob"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "运行作业"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 3"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：项目不存在"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 4"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：爬虫不存在"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 5
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 5
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 5"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统设置为默认设置"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "ResumeStepNature",
+                              "content": {
+                                "step": {
+                                  "type": "<int>",
+                                  "content": 6
+                                },
+                                "flowName": {
+                                  "type": "<string>",
+                                  "content": "Basic Flow"
+                                }
+                              }
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "RESUME STEP Basic Flow 6"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 6
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 6
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 6"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统生成一个UUID设置为作业ID"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "ResumeStepNature",
+                              "content": {
+                                "step": {
+                                  "type": "<int>",
+                                  "content": 7
+                                },
+                                "flowName": {
+                                  "type": "<string>",
+                                  "content": "Basic Flow"
+                                }
+                              }
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "RESUME STEP Basic Flow 7"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 7
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 7
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 7"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统查询使用默认版本（最新版本）"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "ResumeStepNature",
+                              "content": {
+                                "step": {
+                                  "type": "<int>",
+                                  "content": 8
+                                },
+                                "flowName": {
+                                  "type": "<string>",
+                                  "content": "Basic Flow"
+                                }
+                              }
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "RESUME STEP Basic Flow 8"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统调度了对应的爬虫程序，并输出作业ID"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用schedule.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称、爬虫名称、设置、作业ID、版本"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "爬虫名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT爬虫名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "配置存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT配置存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "作业ID存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT作业ID存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "版本存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT版本存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统调用运行对应的爬虫程序"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出作业ID"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "调度一个爬虫运行（也叫一个作业），返回这个作业的ID"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "CancelJob"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "取消作业"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 3"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：项目不存在"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 4"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：作业ID不存在"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 5
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 5
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 5"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统将运行中的作业中止"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "ResumeStepNature",
+                              "content": {
+                                "step": {
+                                  "type": "<int>",
+                                  "content": 7
+                                },
+                                "flowName": {
+                                  "type": "<string>",
+                                  "content": "Basic Flow"
+                                }
+                              }
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "RESUME STEP Basic Flow 7"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "对应的作业被移除或中止"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用cancel.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称和作业ID"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "作业ID存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT作业ID存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "作业处于等待状态"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT作业处于等待状态"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统将作业从等待队列中移除"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出作业先前状态"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "取消一个爬虫（作业）的运行。"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "如果一个作业等待运行，该作业会从被移除。"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "如果作业正在运行，该作业会被中止"
+                          }
+                        }
+                      }
+                    ],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "ListProjects"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "列出项目"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用listprojects.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取当前的项目列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出项目列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "取得一个上传到该Scrapy服务器的项目列表"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "DeleteProject"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "删除项目"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": "Basic Flow"
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS Basic Flow 3"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出错误信息：项目不存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "AbortNature",
+                            "content": {}
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "ABORT"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "项目和其所属版本被删除"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用delproject.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统删除项目的所有版本"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统删除项目"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出信息：成功删除"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "删除一个项目以及项目所有上传的版本"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "ListProjectVersion"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "列出项目版本"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": "Basic Flow"
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 3
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS Basic Flow 3"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出错误信息：项目不存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "AbortNature",
+                            "content": {}
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "ABORT"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用listversions.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取项目的版本列表"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统排序输出版本列表，以及当前使用版本列表"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "取得一个项目可用的版本列表，返回有序排列的版本，最后一个版本为当前使用的版本"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "AddProjectVersion"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "添加项目版本"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "postCondition": {
+                        "type": "PostCondition",
+                        "content": {
+                          "sentences": [{
+                            "type": "Sentence",
+                            "content": {
+                              "name": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "description": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "content": {
+                                "type": "<string>",
+                                "content": "创建了一个对应项目名称的项目"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          }
+                        }
+                      },
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 3"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统用项目名称创建一个项目"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "ResumeStepNature",
+                              "content": {
+                                "step": {
+                                  "type": "<int>",
+                                  "content": 4
+                                },
+                                "flowName": {
+                                  "type": "<string>",
+                                  "content": "Basic Flow"
+                                }
+                              }
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "RESUME STEP Basic Flow 4"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "postCondition": {
+                        "type": "PostCondition",
+                        "content": {
+                          "sentences": [{
+                            "type": "Sentence",
+                            "content": {
+                              "name": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "description": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "content": {
+                                "type": "<string>",
+                                "content": "系统不会修改该项目版本的代码"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          }
+                        }
+                      },
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 4"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：存在相同项目版本"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "postCondition": {
+                        "type": "PostCondition",
+                        "content": {
+                          "sentences": [{
+                            "type": "Sentence",
+                            "content": {
+                              "name": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "description": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "content": {
+                                "type": "<string>",
+                                "content": "系统不会创建这个项目版本"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          }
+                        }
+                      },
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 5
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 5
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 5"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：项目代码不能正确装载"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于运行状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统用项目代码创建了一个项目版本"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用addversion.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称、项目版本以及项目代码"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目版本不存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目版本不存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目代码能够装载"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目代码能够装载"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统装载项目代码"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统获取并输出创建的项目的编号"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "为一个项目添加一个爬虫版本，如果项目不存在则创建一个项目"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "name": {
+              "type": "<string>",
+              "content": "DeleteProjectVersion"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "删除项目版本"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "alternativeFlows": [
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "postCondition": {
+                        "type": "PostCondition",
+                        "content": {
+                          "sentences": [{
+                            "type": "Sentence",
+                            "content": {
+                              "name": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "description": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "content": {
+                                "type": "<string>",
+                                "content": "没有项目版本会被删除"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          }
+                        }
+                      },
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 3
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 3"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：项目不存在"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "postCondition": {
+                        "type": "PostCondition",
+                        "content": {
+                          "sentences": [{
+                            "type": "Sentence",
+                            "content": {
+                              "name": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "description": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "content": {
+                                "type": "<string>",
+                                "content": "没有项目版本会被删除"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          }
+                        }
+                      },
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 4
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 4"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统输出错误信息：项目版本不存在"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "AbortNature",
+                              "content": {}
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "ABORT"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "SpecificAlternative",
+                    "content": {
+                      "postCondition": {
+                        "type": "PostCondition",
+                        "content": {
+                          "sentences": [{
+                            "type": "Sentence",
+                            "content": {
+                              "name": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "description": {
+                                "type": "<string>",
+                                "content": ""
+                              },
+                              "content": {
+                                "type": "<string>",
+                                "content": "项目被删除"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          }
+                        }
+                      },
+                      "rfsSentence": {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "RFSNature",
+                            "content": {
+                              "flowName": {
+                                "type": "<string>",
+                                "content": "Basic Flow"
+                              },
+                              "segments": [{
+                                "type": "RFSNatureSegment",
+                                "content": {
+                                  "toStep": {
+                                    "type": "<int>",
+                                    "content": 6
+                                  },
+                                  "fromStep": {
+                                    "type": "<int>",
+                                    "content": 6
+                                  }
+                                }
+                              }]
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "RFS Basic Flow 6"
+                          }
+                        }
+                      },
+                      "name": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "description": {
+                        "type": "<string>",
+                        "content": ""
+                      },
+                      "steps": [
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统删除项目"
+                            }
+                          }
+                        },
+                        {
+                          "type": "Sentence",
+                          "content": {
+                            "natures": [{
+                              "type": "ResumeStepNature",
+                              "content": {
+                                "step": {
+                                  "type": "<int>",
+                                  "content": 7
+                                },
+                                "flowName": {
+                                  "type": "<string>",
+                                  "content": "Basic Flow"
+                                }
+                              }
+                            }],
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "RESUME STEP Basic Flow 7"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "项目版本被删除"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Scheduler调用delversion.json接口后开始该用例"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从调用参数获取项目名称、版本"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目名称存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目名称存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "版本存在"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT版本存在"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统删除项目版本"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "项目没有剩余版本"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统VALIDATES THAT项目没有剩余版本"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统输出信息：删除成功"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "删除一个项目的版本。"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "如果一个项目的没有剩余的版本，则项目也会被删除。"
+                          }
+                        }
+                      }
+                    ],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "diagrams": [
+        {
+          "type": "UCDiagram",
+          "content": {
+            "ucModel": "&1",
+            "nodes": [
+              {
+                "type": "UCDActorNode",
+                "content": {
+                  "actor": "&0",
+                  "top": {
+                    "type": "<int>",
+                    "content": 60
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 100
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 100
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 100
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&2",
+                  "top": {
+                    "type": "<int>",
+                    "content": 60
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "top": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&3",
+                  "top": {
+                    "type": "<int>",
+                    "content": 220
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "top": {
+                    "type": "<int>",
+                    "content": 235
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 505
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&4",
+                  "top": {
+                    "type": "<int>",
+                    "content": 381
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 297
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&5",
+                  "top": {
+                    "type": "<int>",
+                    "content": 460
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&6",
+                  "top": {
+                    "type": "<int>",
+                    "content": 540
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&7",
+                  "top": {
+                    "type": "<int>",
+                    "content": 620
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&8",
+                  "top": {
+                    "type": "<int>",
+                    "content": 700
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&9",
+                  "top": {
+                    "type": "<int>",
+                    "content": 780
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&10",
+                  "top": {
+                    "type": "<int>",
+                    "content": 860
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&11",
+                  "top": {
+                    "type": "<int>",
+                    "content": 940
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              }
+            ],
+            "top": {
+              "type": "<int>",
+              "content": 0
+            },
+            "left": {
+              "type": "<int>",
+              "content": 0
+            },
+            "width": {
+              "type": "<int>",
+              "content": 0
+            },
+            "name": {
+              "type": "<string>",
+              "content": ""
+            },
+            "height": {
+              "type": "<int>",
+              "content": 0
+            }
+          }
+        },
+        {
+          "type": "UCDiagram",
+          "content": {
+            "ucModel": "&1",
+            "nodes": [
+              {
+                "type": "UCDActorNode",
+                "content": {
+                  "actor": "&0",
+                  "top": {
+                    "type": "<int>",
+                    "content": 60
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 100
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 100
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 100
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&2",
+                  "top": {
+                    "type": "<int>",
+                    "content": 60
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&3",
+                  "top": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&4",
+                  "top": {
+                    "type": "<int>",
+                    "content": 220
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&5",
+                  "top": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&6",
+                  "top": {
+                    "type": "<int>",
+                    "content": 380
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&7",
+                  "top": {
+                    "type": "<int>",
+                    "content": 460
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&8",
+                  "top": {
+                    "type": "<int>",
+                    "content": 540
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&9",
+                  "top": {
+                    "type": "<int>",
+                    "content": 620
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&10",
+                  "top": {
+                    "type": "<int>",
+                    "content": 700
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              },
+              {
+                "type": "UCDUseCaseNode",
+                "content": {
+                  "useCase": "&11",
+                  "top": {
+                    "type": "<int>",
+                    "content": 780
+                  },
+                  "left": {
+                    "type": "<int>",
+                    "content": 300
+                  },
+                  "width": {
+                    "type": "<int>",
+                    "content": 140
+                  },
+                  "height": {
+                    "type": "<int>",
+                    "content": 60
+                  }
+                }
+              }
+            ],
+            "top": {
+              "type": "<int>",
+              "content": 0
+            },
+            "left": {
+              "type": "<int>",
+              "content": 0
+            },
+            "width": {
+              "type": "<int>",
+              "content": 0
+            },
+            "name": {
+              "type": "<string>",
+              "content": ""
+            },
+            "height": {
+              "type": "<int>",
+              "content": 0
+            }
+          }
+        }
+      ]
+    }
+  }
+}
