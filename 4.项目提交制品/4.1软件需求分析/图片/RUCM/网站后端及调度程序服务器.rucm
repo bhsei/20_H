@@ -1521,6 +1521,49 @@
             "description": {
               "type": "<string>",
               "content": "终止每某一个正在运行或者已经被挂起的任务"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    }]
+                  }
+                }
+              }
             }
           }
         },
@@ -1564,7 +1607,7 @@
             "specification": {
               "type": "UseCaseSpecification",
               "content": {
-                "secondaryActors": ["&2"],
+                "secondaryActors": ["&3"],
                 "name": {
                   "type": "<string>",
                   "content": ""
@@ -1573,7 +1616,7 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "primaryActor": "&3",
+                "primaryActor": "&2",
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -2134,6 +2177,49 @@
             "description": {
               "type": "<string>",
               "content": "删除某一服务器积极点，终止其上运行的所有爬虫任务"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    }]
+                  }
+                }
+              }
             }
           }
         },
@@ -2147,6 +2233,49 @@
             "description": {
               "type": "<string>",
               "content": "恢复某一已停用的服务器节点，恢复其上所有已挂起爬虫任务的运行"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    }]
+                  }
+                }
+              }
             }
           }
         },
@@ -2160,6 +2289,49 @@
             "description": {
               "type": "<string>",
               "content": "对某一新增的服务器节点进行配置，使其具备正常执行爬虫任务的能力"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    }]
+                  }
+                }
+              }
             }
           }
         },
@@ -2173,6 +2345,49 @@
             "description": {
               "type": "<string>",
               "content": "根据用户提供的爬虫需求选项，生成对应的爬虫脚本"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    }]
+                  }
+                }
+              }
             }
           }
         },
@@ -2186,6 +2401,49 @@
             "description": {
               "type": "<string>",
               "content": "根据用户提供的爬虫任务，在关系数据库中找到对应的服务器节点"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    }]
+                  }
+                }
+              }
             }
           }
         }
