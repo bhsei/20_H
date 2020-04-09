@@ -101,7 +101,37 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "系统成功加载爬虫列表"
+                          "content": "用户成功登录"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查看系统内现有的爬虫"
                         }
                       }
                     }],
@@ -210,36 +240,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "查看系统内现有的爬虫"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -311,6 +311,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "得到爬虫列表"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "根据关键字在得到的爬虫列表中进行检索"
                         }
                       }
                     }],
@@ -402,36 +432,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "根据关键字在得到的爬虫列表中进行检索"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -476,7 +476,37 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "进入管理爬虫界面"
+                          "content": "用户成功登录"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "添加新的爬虫任务"
                         }
                       }
                     }],
@@ -601,36 +631,6 @@
                         }
                       }
                     ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "添加新的爬虫任务"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
                   }
                 }
               }
@@ -789,6 +789,36 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "为新的爬虫任务选择一个爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -910,36 +940,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "为新的爬虫任务选择一个爬虫模板"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -985,6 +985,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "当前有一个新添加的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "为新添加的爬虫任务进行配置"
                         }
                       }
                     }],
@@ -1093,36 +1123,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "为新添加的爬虫任务进行配置"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -1151,6 +1151,66 @@
                   "content": ""
                 },
                 "primaryActor": "&2",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统中有该用户正在运行的爬虫"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查看当前正在运行的爬虫进度"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -1232,36 +1292,6 @@
                         }
                       }
                     ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "查看当前正在运行的爬虫进度"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
                   }
                 }
               }
@@ -1420,6 +1450,36 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "启动一个还未被启动的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -1557,36 +1617,6 @@
                         }
                       }
                     ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "启动一个还未被启动的爬虫任务"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
                   }
                 }
               }
@@ -1745,6 +1775,36 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "暂停一个正在运行的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -1870,36 +1930,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "暂停一个正在运行的爬虫任务"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -1944,6 +1974,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统内有已经被启动的爬虫任务"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "终止一个爬虫任务"
                         }
                       }
                     }],
@@ -2069,36 +2129,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "终止一个爬虫任务"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -2144,6 +2174,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "管理爬虫结果"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "浏览某个爬虫任务的爬取结果"
                         }
                       }
                     }],
@@ -2251,36 +2311,6 @@
                         }
                       }
                     ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "浏览某个爬虫任务的爬取结果"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
                   }
                 }
               }
@@ -2396,6 +2426,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "管理爬虫结果"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "将某个爬虫任务的爬取结果保存到本地"
                         }
                       }
                     }],
@@ -2534,36 +2594,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "将某个爬虫任务的爬取结果保存到本地"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -2609,6 +2639,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统内有爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "删除一个现有的爬虫模板"
                         }
                       }
                     }],
@@ -2717,36 +2777,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "删除一个现有的爬虫模板"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -2792,6 +2822,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统内有爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "更新一个现有的爬虫模板"
                         }
                       }
                     }],
@@ -2917,36 +2977,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "更新一个现有的爬虫模板"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -2975,6 +3005,66 @@
                   "content": ""
                 },
                 "primaryActor": "&3",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "管理员成功登录"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查询系统内现有的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -3070,36 +3160,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "查询系统内现有的爬虫模板"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -3128,6 +3188,36 @@
                   "content": ""
                 },
                 "primaryActor": "&3",
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "添加一个新的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -3240,36 +3330,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "添加一个新的爬虫模板"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -3328,6 +3388,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统中存在爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "按类别检索特定类型的爬虫"
                         }
                       }
                     }],
@@ -3405,36 +3495,6 @@
                         }
                       }
                     ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "按类别检索特定类型的爬虫"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
                   }
                 }
               }
@@ -3554,7 +3614,37 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "进入管理爬虫任务界面"
+                          "content": "用户成功登录"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查询目前系统内的所有爬虫"
                         }
                       }
                     }],
@@ -3650,36 +3740,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "查询目前系统内的所有爬虫"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -3738,6 +3798,36 @@
                   "content": ""
                 },
                 "primaryActor": "&3",
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "管理系统内的爬虫模板"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -3785,36 +3875,6 @@
                         }
                       }
                     ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "管理系统内的爬虫模板"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
                   }
                 }
               }
