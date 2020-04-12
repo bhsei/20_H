@@ -1,24 +1,16 @@
 {
   "lmf.version": "1.1",
   "reference": [
-    {"path": "<root>.modelElements[2]"},
-    {"path": "<root>.modelElements[3]"},
-    {"path": "<root>.modelElements[1]"},
     {"path": "<root>.modelElements[0]"},
-    {"path": "<root>.modelElements[3].specification.basicFlow.steps[0]"},
-    {"path": "<root>.modelElements[3].specification.basicFlow.steps[7]"},
-    {"path": "<root>.modelElements[3].specification.basicFlow.steps[0].natures[1]"},
-    {"path": "<root>.modelElements[9]"},
-    {"path": "<root>.modelElements[4]"},
-    {"path": "<root>.modelElements[8]"},
-    {"path": "<root>.modelElements[17]"},
-    {"path": "<root>.modelElements[18]"},
-    {"path": "<root>.modelElements[6]"},
-    {"path": "<root>.modelElements[10].specification.basicFlow.steps[0]"},
-    {"path": "<root>.modelElements[16]"},
     {"path": "<root>.modelElements[11]"},
-    {"path": "<root>.modelElements[13]"},
-    {"path": "<root>.modelElements[13].specification.basicFlow.steps[1]"}
+    {"path": "<root>.modelElements[6]"},
+    {"path": "<root>.modelElements[1]"},
+    {"path": "<root>.modelElements[3]"},
+    {"path": "<root>.modelElements[8]"},
+    {"path": "<root>.modelElements[8].specification.basicFlow.steps[1]"},
+    {"path": "<root>.modelElements[5]"},
+    {"path": "<root>.modelElements[14]"},
+    {"path": "<root>.modelElements[12]"}
   ],
   "root": {
     "type": "UCModel",
@@ -63,674 +55,15 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "从请求队列中获取指令"
+              "content": "唤醒任务"
             },
             "description": {
               "type": "<string>",
-              "content": "从当前的请求队列中获取来自用用户的任务管理指令"
-            }
-          }
-        },
-        {
-          "type": "UseCase",
-          "content": {
-            "include": [{
-              "type": "Include",
-              "content": {
-                "name": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "description": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "addition": "&0",
-                "includingCase": "&1"
-              }
-            }],
-            "name": {
-              "type": "<string>",
-              "content": "管理任务"
-            },
-            "description": {
-              "type": "<string>",
-              "content": "根据用户请求，添加新的爬虫任务或者对现有的任务进行管理"
+              "content": "将位于某个服务器上的已挂起任务转为运行状态"
             },
             "specification": {
               "type": "UseCaseSpecification",
               "content": {
-                "secondaryActors": ["&2"],
-                "alternativeFlows": [
-                  {
-                    "type": "SpecificAlternative",
-                    "content": {
-                      "postCondition": {
-                        "type": "PostCondition",
-                        "content": {
-                          "sentences": [{
-                            "type": "Sentence",
-                            "content": {
-                              "name": {
-                                "type": "<string>",
-                                "content": ""
-                              },
-                              "description": {
-                                "type": "<string>",
-                                "content": ""
-                              },
-                              "content": {
-                                "type": "<string>",
-                                "content": "请求队列为空"
-                              }
-                            }
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          }
-                        }
-                      },
-                      "rfsSentence": {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
-                            "type": "RFSNature",
-                            "content": {
-                              "flowName": {
-                                "type": "<string>",
-                                "content": "Basic Flow"
-                              },
-                              "segments": [{
-                                "type": "RFSNatureSegment",
-                                "content": {
-                                  "toStep": {
-                                    "type": "<int>",
-                                    "content": 2
-                                  },
-                                  "fromStep": {
-                                    "type": "<int>",
-                                    "content": 2
-                                  }
-                                }
-                              }]
-                            }
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "RFS Basic Flow 2"
-                          }
-                        }
-                      },
-                      "name": {
-                        "type": "<string>",
-                        "content": ""
-                      },
-                      "description": {
-                        "type": "<string>",
-                        "content": ""
-                      },
-                      "steps": [
-                        {
-                          "type": "Sentence",
-                          "content": {
-                            "name": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "description": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "content": {
-                              "type": "<string>",
-                              "content": "系统睡眠100ms"
-                            }
-                          }
-                        },
-                        {
-                          "type": "Sentence",
-                          "content": {
-                            "natures": [{
-                              "type": "ResumeStepNature",
-                              "content": {
-                                "step": {
-                                  "type": "<int>",
-                                  "content": 1
-                                },
-                                "flowName": {
-                                  "type": "<string>",
-                                  "content": ""
-                                }
-                              }
-                            }],
-                            "name": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "description": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "content": {
-                              "type": "<string>",
-                              "content": "RESUME STEP 1"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "type": "SpecificAlternative",
-                    "content": {
-                      "postCondition": {
-                        "type": "PostCondition",
-                        "content": {
-                          "sentences": [{
-                            "type": "Sentence",
-                            "content": {
-                              "name": {
-                                "type": "<string>",
-                                "content": ""
-                              },
-                              "description": {
-                                "type": "<string>",
-                                "content": ""
-                              },
-                              "content": {
-                                "type": "<string>",
-                                "content": "系统中不存在可用的服务器节点"
-                              }
-                            }
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          }
-                        }
-                      },
-                      "rfsSentence": {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
-                            "type": "RFSNature",
-                            "content": {
-                              "flowName": {
-                                "type": "<string>",
-                                "content": "Basic Flow"
-                              },
-                              "segments": [{
-                                "type": "RFSNatureSegment",
-                                "content": {
-                                  "toStep": {
-                                    "type": "<int>",
-                                    "content": 3
-                                  },
-                                  "fromStep": {
-                                    "type": "<int>",
-                                    "content": 3
-                                  }
-                                }
-                              }]
-                            }
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "RFS Basic Flow 3"
-                          }
-                        }
-                      },
-                      "name": {
-                        "type": "<string>",
-                        "content": ""
-                      },
-                      "description": {
-                        "type": "<string>",
-                        "content": ""
-                      },
-                      "steps": [
-                        {
-                          "type": "Sentence",
-                          "content": {
-                            "name": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "description": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "content": {
-                              "type": "<string>",
-                              "content": "系统提示 Administrator 添加或者恢复服务器节点"
-                            }
-                          }
-                        },
-                        {
-                          "type": "Sentence",
-                          "content": {
-                            "natures": [{
-                              "type": "AbortNature",
-                              "content": {}
-                            }],
-                            "name": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "description": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "content": {
-                              "type": "<string>",
-                              "content": "ABORT"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ],
-                "name": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "description": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "primaryActor": "&3",
-                "preCondition": {
-                  "type": "PreCondition",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "系统中存在可用的服务器节点"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
-                },
-                "basicFlow": {
-                  "type": "BasicFlow",
-                  "content": {
-                    "postCondition": {
-                      "type": "PostCondition",
-                      "content": {
-                        "sentences": [{
-                          "type": "Sentence",
-                          "content": {
-                            "name": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "description": {
-                              "type": "<string>",
-                              "content": ""
-                            },
-                            "content": {
-                              "type": "<string>",
-                              "content": "系统完成了一次爬虫任务管理 MEANWHILE 系统更新了MySQL中的任务-服务器列表"
-                            }
-                          }
-                        }],
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        }
-                      }
-                    },
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "steps": [
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [
-                            {
-                              "type": "DoNature",
-                              "content": {}
-                            },
-                            {
-                              "type": "DoComposite",
-                              "content": {
-                                "doSentence": "&4",
-                                "untilSentence": "&5",
-                                "compositeSentences": [
-                                  "&4",
-                                  "&5"
-                                ]
-                              }
-                            }
-                          ],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "DO INCLUDE USE CASE 从请求队列中获取指令"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
-                            "type": "ValidateThatNature",
-                            "content": {
-                              "subject": {
-                                "type": "<string>",
-                                "content": "系统"
-                              },
-                              "object": {
-                                "type": "<string>",
-                                "content": "获取指令有效"
-                              }
-                            }
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "系统 VALIDATES THAT 获取指令有效"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
-                            "type": "ValidateThatNature",
-                            "content": {
-                              "subject": {
-                                "type": "<string>",
-                                "content": "系统"
-                              },
-                              "object": {
-                                "type": "<string>",
-                                "content": "存在可用的服务器节点"
-                              }
-                            }
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "系统 VALIDATES THAT 存在可用的服务器节点"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "IF 系统获取新增任务指令 THEN INCLUDE USE CASE 新增任务 ENDIF"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "ELSEIF 系统获取唤醒任务指令 THEN INCLUDE USE CASE 唤醒任务 ENDIF"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "ELSEIF 系统获取挂起任务指令 THEN INCLUDE USE CASE 挂起任务 ENDIFELSEIF 系统获取终止任务指令"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "ELSEIF 系统获取终止任务指令 THEN INCLUDE USE CASE 终止任务 ENDIF"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [
-                            {
-                              "type": "UntilNature",
-                              "content": {"untilCondition": {
-                                "type": "<string>",
-                                "content": "系统终止"
-                              }}
-                            },
-                            {
-                              "type": "ReferenceNature",
-                              "content": {
-                                "referenceNature": "&6",
-                                "referenceSentence": "&4"
-                              }
-                            }
-                          ],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "UNTIL 系统终止"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "根据用户请求，添加新的爬虫任务或者对现有的任务进行管理"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "type": "UseCase",
-          "content": {
-            "include": [
-              {
-                "type": "Include",
-                "content": {
-                  "name": {
-                    "type": "<string>",
-                    "content": ""
-                  },
-                  "description": {
-                    "type": "<string>",
-                    "content": ""
-                  },
-                  "addition": "&7",
-                  "includingCase": "&8"
-                }
-              },
-              {
-                "type": "Include",
-                "content": {
-                  "name": {
-                    "type": "<string>",
-                    "content": ""
-                  },
-                  "description": {
-                    "type": "<string>",
-                    "content": ""
-                  },
-                  "addition": "&9",
-                  "includingCase": "&8"
-                }
-              },
-              {
-                "type": "Include",
-                "content": {
-                  "name": {
-                    "type": "<string>",
-                    "content": ""
-                  },
-                  "description": {
-                    "type": "<string>",
-                    "content": ""
-                  },
-                  "addition": "&10",
-                  "includingCase": "&8"
-                }
-              }
-            ],
-            "name": {
-              "type": "<string>",
-              "content": "新增任务"
-            },
-            "description": {
-              "type": "<string>",
-              "content": "根据用户请求，生成一个新的爬虫任务并根据服务器负载以及任务类型将其部署到某一服务器"
-            },
-            "specification": {
-              "type": "UseCaseSpecification",
-              "content": {
-                "secondaryActors": ["&2"],
                 "alternativeFlows": [{
                   "type": "SpecificAlternative",
                   "content": {
@@ -750,7 +83,7 @@
                             },
                             "content": {
                               "type": "<string>",
-                              "content": "系统中存在可用的服务器节点"
+                              "content": "系统中的爬虫任务m处于工作状态"
                             }
                           }
                         }],
@@ -772,18 +105,18 @@
                           "content": {
                             "flowName": {
                               "type": "<string>",
-                              "content": "Basic Flow"
+                              "content": ""
                             },
                             "segments": [{
                               "type": "RFSNatureSegment",
                               "content": {
                                 "toStep": {
                                   "type": "<int>",
-                                  "content": 3
+                                  "content": 1
                                 },
                                 "fromStep": {
                                   "type": "<int>",
-                                  "content": 3
+                                  "content": 1
                                 }
                               }
                             }]
@@ -799,7 +132,7 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "RFS Basic Flow 3"
+                          "content": "RFS 1"
                         }
                       }
                     },
@@ -825,13 +158,17 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "系统提示 Administrator 添加或者恢复服务器节点"
+                            "content": "系统提示用户爬虫任务m已经被唤醒"
                           }
                         }
                       },
                       {
                         "type": "Sentence",
                         "content": {
+                          "natures": [{
+                            "type": "AbortNature",
+                            "content": {}
+                          }],
                           "name": {
                             "type": "<string>",
                             "content": ""
@@ -857,7 +194,7 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "primaryActor": "&3",
+                "primaryActor": "&0",
                 "preCondition": {
                   "type": "PreCondition",
                   "content": {
@@ -874,7 +211,7 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "系统中存在可用的服务器节点"
+                          "content": "系统中已经获取了爬虫任务m的任务信息"
                         }
                       }
                     }],
@@ -907,7 +244,7 @@
                             },
                             "content": {
                               "type": "<string>",
-                              "content": "系统完成一次新增任务 MEANWHILE 系统在MySQL中可以找到爬虫任务m及服务器节点s"
+                              "content": "服务器节点s上的爬虫任务m被唤醒"
                             }
                           }
                         }],
@@ -934,54 +271,6 @@
                         "type": "Sentence",
                         "content": {
                           "natures": [{
-                            "type": "IncludeUCNature",
-                            "content": {"useCaseName": {
-                              "type": "<string>",
-                              "content": "获取服务器负载情况"
-                            }}
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "INCLUDE USE CASE 获取服务器负载情况"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
-                            "type": "IncludeUCNature",
-                            "content": {"useCaseName": {
-                              "type": "<string>",
-                              "content": "调用负载均衡调度算法"
-                            }}
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "INCLUDE USE CASE 调用负载均衡调度算法"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
                             "type": "ValidateThatNature",
                             "content": {
                               "subject": {
@@ -990,7 +279,7 @@
                               },
                               "object": {
                                 "type": "<string>",
-                                "content": "获得一个可用的服务器节点s"
+                                "content": "爬虫任务m处于正在挂起状态"
                               }
                             }
                           }],
@@ -1004,31 +293,7 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "系统 VALIDATES THAT 获得一个可用的服务器节点s"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
-                            "type": "IncludeUCNature",
-                            "content": {"useCaseName": {
-                              "type": "<string>",
-                              "content": "动态生成爬虫脚本"
-                            }}
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "INCLUDE USE CASE 动态生成爬虫脚本"
+                            "content": "系统 VALIDATES THAT 爬虫任务m处于正在挂起状态"
                           }
                         }
                       },
@@ -1045,7 +310,7 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "系统将爬虫任务m部署到服务器节点s"
+                            "content": "系统发送爬虫任务m的唤醒请求到服务器节点s"
                           }
                         }
                       },
@@ -1062,7 +327,7 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "系统将爬虫任务m与服务器节点s存入关系数据库MySQL"
+                            "content": "系统修改 MySQL中的爬虫任务m的状态为正在运行"
                           }
                         }
                       }
@@ -1085,7 +350,7 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "根据用户请求，生成一个新的爬虫任务并根据服务器负载以及任务类型将其部署到某一服务器"
+                          "content": "将位于某个服务器上的已挂起任务转为运行状态"
                         }
                       }
                     }],
@@ -1108,77 +373,6 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "唤醒任务"
-            },
-            "description": {
-              "type": "<string>",
-              "content": "将位于某个服务器上的已挂起任务转为运行状态"
-            },
-            "specification": {
-              "type": "UseCaseSpecification",
-              "content": {
-                "name": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "description": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "basicFlow": {
-                  "type": "BasicFlow",
-                  "content": {
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "steps": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": ""
-                        }
-                      }
-                    }]
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "type": "UseCase",
-          "content": {
-            "include": [{
-              "type": "Include",
-              "content": {
-                "name": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "description": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "addition": "&11",
-                "includingCase": "&12"
-              }
-            }],
-            "name": {
-              "type": "<string>",
               "content": "挂起任务"
             },
             "description": {
@@ -1188,7 +382,6 @@
             "specification": {
               "type": "UseCaseSpecification",
               "content": {
-                "secondaryActors": ["&2"],
                 "alternativeFlows": [{
                   "type": "SpecificAlternative",
                   "content": {
@@ -1208,7 +401,7 @@
                             },
                             "content": {
                               "type": "<string>",
-                              "content": "系统中存在该任务"
+                              "content": "爬虫任务m已经被挂起"
                             }
                           }
                         }],
@@ -1237,11 +430,11 @@
                               "content": {
                                 "toStep": {
                                   "type": "<int>",
-                                  "content": 2
+                                  "content": 1
                                 },
                                 "fromStep": {
                                   "type": "<int>",
-                                  "content": 2
+                                  "content": 1
                                 }
                               }
                             }]
@@ -1257,7 +450,7 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "RFS Basic Flow 2 "
+                          "content": "RFS Basic Flow 1"
                         }
                       }
                     },
@@ -1272,10 +465,6 @@
                     "steps": [{
                       "type": "Sentence",
                       "content": {
-                        "natures": [{
-                          "type": "AbortNature",
-                          "content": {}
-                        }],
                         "name": {
                           "type": "<string>",
                           "content": ""
@@ -1286,7 +475,7 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "ABORT"
+                          "content": "系统通知用户爬虫任务m已经被挂起"
                         }
                       }
                     }]
@@ -1300,7 +489,7 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "primaryActor": "&3",
+                "primaryActor": "&0",
                 "preCondition": {
                   "type": "PreCondition",
                   "content": {
@@ -1317,7 +506,7 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "系统中存在该任务以及对应的服务器节点"
+                          "content": "系统中已经获取了爬虫任务m的任务信息"
                         }
                       }
                     }],
@@ -1350,7 +539,7 @@
                             },
                             "content": {
                               "type": "<string>",
-                              "content": "服务器节点s上的任务m被挂起"
+                              "content": "爬虫任务m被挂起"
                             }
                           }
                         }],
@@ -1377,30 +566,6 @@
                         "type": "Sentence",
                         "content": {
                           "natures": [{
-                            "type": "IncludeUCNature",
-                            "content": {"useCaseName": {
-                              "type": "<string>",
-                              "content": "查询任务所在服务器节点"
-                            }}
-                          }],
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "INCLUDE USE CASE 查询任务所在服务器节点"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "natures": [{
                             "type": "ValidateThatNature",
                             "content": {
                               "subject": {
@@ -1409,7 +574,7 @@
                               },
                               "object": {
                                 "type": "<string>",
-                                "content": "关系数据库中存在该任务m及其部署的服务器节点s"
+                                "content": "爬虫任务m处于正在运行状态"
                               }
                             }
                           }],
@@ -1423,7 +588,7 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "系统 VALIDATES THAT 关系数据库中存在该任务m及其部署的服务器节点s"
+                            "content": "系统 VALIDATES THAT 爬虫任务m处于正在运行状态"
                           }
                         }
                       },
@@ -1447,19 +612,6 @@
                       {
                         "type": "Sentence",
                         "content": {
-                          "natures": [{
-                            "type": "IfThenEndIfNature",
-                            "content": {
-                              "ifCondition": {
-                                "type": "<string>",
-                                "content": "服务器节点s上的任务m之前未被挂起"
-                              },
-                              "thenAction": {
-                                "type": "<string>",
-                                "content": "服务器s将其上的任务m挂起"
-                              }
-                            }
-                          }],
                           "name": {
                             "type": "<string>",
                             "content": ""
@@ -1470,7 +622,7 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "IF 服务器节点s上的任务m之前未被挂起 THEN 服务器s将其上的任务m挂起 ENDIF"
+                            "content": "系统修改 MySQL中的爬虫任务m的状态为被挂起"
                           }
                         }
                       }
@@ -1533,18 +685,11 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "basicFlow": {
-                  "type": "BasicFlow",
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
                   "content": {
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "steps": [{
+                    "sentences": [{
                       "type": "Sentence",
                       "content": {
                         "name": {
@@ -1557,69 +702,53 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": ""
+                          "content": "系统中已经获取了爬虫任务m的任务信息"
                         }
                       }
-                    }]
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
                   }
-                }
-              }
-            }
-          }
-        },
-        {
-          "type": "UseCase",
-          "content": {
-            "name": {
-              "type": "<string>",
-              "content": "调用负载均衡调度算法"
-            },
-            "description": {
-              "type": "<string>",
-              "content": "根据服务器负载情况，挑选出合适的服务器"
-            }
-          }
-        },
-        {
-          "type": "UseCase",
-          "content": {
-            "name": {
-              "type": "<string>",
-              "content": "获取服务器负载情况"
-            },
-            "description": {
-              "type": "<string>",
-              "content": "获取当前所有服务器的负载压力"
-            }
-          }
-        },
-        {
-          "type": "UseCase",
-          "content": {
-            "name": {
-              "type": "<string>",
-              "content": "管理服务器节点"
-            },
-            "description": {
-              "type": "<string>",
-              "content": "对系统包含的所有服务器节点进行管理"
-            },
-            "specification": {
-              "type": "UseCaseSpecification",
-              "content": {
-                "secondaryActors": ["&3"],
-                "name": {
-                  "type": "<string>",
-                  "content": ""
                 },
-                "description": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "primaryActor": "&2",
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统中不存在爬虫任务m"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
                     "name": {
                       "type": "<string>",
                       "content": ""
@@ -1632,22 +761,6 @@
                       {
                         "type": "Sentence",
                         "content": {
-                          "natures": [
-                            {
-                              "type": "IfThenNature",
-                              "content": {"ifCondition": {
-                                "type": "<string>",
-                                "content": "系统接收到来自 Administrator 的获取服务器负载请求"
-                              }}
-                            },
-                            {
-                              "type": "IfComposite",
-                              "content": {
-                                "ifSentence": "&13",
-                                "compositeSentences": ["&13"]
-                              }
-                            }
-                          ],
                           "name": {
                             "type": "<string>",
                             "content": ""
@@ -1658,7 +771,7 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "IF 系统接收到来自 Administrator 的获取服务器负载请求 "
+                            "content": "系统发送爬虫任务m的中止请求到服务器节点s"
                           }
                         }
                       },
@@ -1675,41 +788,7 @@
                           },
                           "content": {
                             "type": "<string>",
-                            "content": "THEN INCLUDE USE CASE 查询服务器负载情况 ELSEIF 系统接收到来自 Administrator 的查询服务器节点请求 "
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "THEN INCLUDE USE CASE 查询服务器节点 ELSEIF 系统接收到来自 Administrator 的新增服务器节点请求 "
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "THEN INCLUDE USE CASE 新增服务器节点 ENDIF"
+                            "content": "系统删除 MySQL 中的爬虫任务m"
                           }
                         }
                       }
@@ -1732,7 +811,7 @@
                         },
                         "content": {
                           "type": "<string>",
-                          "content": "对系统包含的所有服务器节点进行管理"
+                          "content": "终止每某一个正在运行或者已经被挂起的任务"
                         }
                       }
                     }],
@@ -1753,6 +832,19 @@
         {
           "type": "UseCase",
           "content": {
+            "name": {
+              "type": "<string>",
+              "content": "获取服务器负载情况"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "获取当前所有服务器的负载压力"
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
             "include": [{
               "type": "Include",
               "content": {
@@ -1764,8 +856,8 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "addition": "&14",
-                "includingCase": "&15"
+                "addition": "&1",
+                "includingCase": "&2"
               }
             }],
             "name": {
@@ -1779,7 +871,7 @@
             "specification": {
               "type": "UseCaseSpecification",
               "content": {
-                "secondaryActors": ["&3"],
+                "secondaryActors": ["&0"],
                 "name": {
                   "type": "<string>",
                   "content": ""
@@ -1788,7 +880,7 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "primaryActor": "&2",
+                "primaryActor": "&3",
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -1936,8 +1028,8 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "addition": "&12",
-                "includingCase": "&16"
+                "addition": "&4",
+                "includingCase": "&5"
               }
             }],
             "name": {
@@ -1951,7 +1043,7 @@
             "specification": {
               "type": "UseCaseSpecification",
               "content": {
-                "secondaryActors": ["&3"],
+                "secondaryActors": ["&0"],
                 "name": {
                   "type": "<string>",
                   "content": ""
@@ -1960,7 +1052,7 @@
                   "type": "<string>",
                   "content": ""
                 },
-                "primaryActor": "&2",
+                "primaryActor": "&3",
                 "preCondition": {
                   "type": "PreCondition",
                   "content": {
@@ -2077,8 +1169,8 @@
                             {
                               "type": "IfComposite",
                               "content": {
-                                "ifSentence": "&17",
-                                "compositeSentences": ["&17"]
+                                "ifSentence": "&6",
+                                "compositeSentences": ["&6"]
                               }
                             }
                           ],
@@ -2396,26 +1488,87 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "查询任务所在服务器节点"
+              "content": "查询任务状态"
             },
             "description": {
               "type": "<string>",
-              "content": "根据用户提供的爬虫任务，在关系数据库中找到对应的服务器节点"
+              "content": "根据用户提供的爬虫任务，在关系数据库中找到对应的服务器节、任务状态，爬虫爬取进度等任务信息"
             },
             "specification": {
               "type": "UseCaseSpecification",
               "content": {
-                "name": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "description": {
-                  "type": "<string>",
-                  "content": ""
-                },
-                "basicFlow": {
-                  "type": "BasicFlow",
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
                   "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统中不存在该爬虫任务m"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 1
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 1
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS 1 "
+                        }
+                      }
+                    },
                     "name": {
                       "type": "<string>",
                       "content": ""
@@ -2424,7 +1577,61 @@
                       "type": "<string>",
                       "content": ""
                     },
-                    "steps": [{
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统提示用户不存在该任务m"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "AbortNature",
+                            "content": {}
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "ABORT"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
                       "type": "Sentence",
                       "content": {
                         "name": {
@@ -2437,10 +1644,556 @@
                         },
                         "content": {
                           "type": "<string>",
+                          "content": "系统中存在该爬虫任务m"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统获取了爬虫任务m的相关信息"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
                           "content": ""
                         }
                       }
-                    }]
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "MySQL中存在爬虫任务m"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统 VALIDATES THAT MySQL中存在爬虫任务m"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统从 MySQL 中获取爬虫任务m的状态，所在的服务器节点、爬取的进度等信息"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "根据用户提供的爬虫任务m，在关系数据库中找到对应的服务器节、任务状态，爬虫爬取进度等任务信息"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "UseCase",
+          "content": {
+            "include": [
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&7",
+                  "includingCase": "&8"
+                }
+              },
+              {
+                "type": "Include",
+                "content": {
+                  "name": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "description": {
+                    "type": "<string>",
+                    "content": ""
+                  },
+                  "addition": "&9",
+                  "includingCase": "&8"
+                }
+              }
+            ],
+            "name": {
+              "type": "<string>",
+              "content": "新增任务"
+            },
+            "description": {
+              "type": "<string>",
+              "content": "根据用户请求，生成一个新的爬虫任务并根据服务器负载以及任务类型将其部署到某一服务器"
+            },
+            "specification": {
+              "type": "UseCaseSpecification",
+              "content": {
+                "secondaryActors": ["&3"],
+                "alternativeFlows": [{
+                  "type": "SpecificAlternative",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统中不存在可用的服务器节点"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "rfsSentence": {
+                      "type": "Sentence",
+                      "content": {
+                        "natures": [{
+                          "type": "RFSNature",
+                          "content": {
+                            "flowName": {
+                              "type": "<string>",
+                              "content": "Basic Flow"
+                            },
+                            "segments": [{
+                              "type": "RFSNatureSegment",
+                              "content": {
+                                "toStep": {
+                                  "type": "<int>",
+                                  "content": 2
+                                },
+                                "fromStep": {
+                                  "type": "<int>",
+                                  "content": 2
+                                }
+                              }
+                            }]
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "RFS Basic Flow 2"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统提示 Administrator 当前无可用的服务器节点"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "AbortNature",
+                            "content": {}
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "ABORT"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }],
+                "name": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "description": {
+                  "type": "<string>",
+                  "content": ""
+                },
+                "primaryActor": "&0",
+                "preCondition": {
+                  "type": "PreCondition",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "系统中存在某一服务器节点"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "basicFlow": {
+                  "type": "BasicFlow",
+                  "content": {
+                    "postCondition": {
+                      "type": "PostCondition",
+                      "content": {
+                        "sentences": [{
+                          "type": "Sentence",
+                          "content": {
+                            "name": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "description": {
+                              "type": "<string>",
+                              "content": ""
+                            },
+                            "content": {
+                              "type": "<string>",
+                              "content": "系统新增了一个任务m在服务器节点s上 MEANWHILE 系统可以在关系数据库MySQL中查询到爬虫任务m和服务器节点s的关系"
+                            }
+                          }
+                        }],
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "steps": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "IncludeUCNature",
+                            "content": {"useCaseName": {
+                              "type": "<string>",
+                              "content": "获取服务器负载情况"
+                            }}
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "INCLUDE USE CASE 获取服务器负载情况"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "ValidateThatNature",
+                            "content": {
+                              "subject": {
+                                "type": "<string>",
+                                "content": "系统"
+                              },
+                              "object": {
+                                "type": "<string>",
+                                "content": "存在可用的服务器节点"
+                              }
+                            }
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统 VALIDATES THAT 存在可用的服务器节点"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "Tasker遵循负载均衡策略从可用的服务器节点中选择一个节点s"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "natures": [{
+                            "type": "IncludeUCNature",
+                            "content": {"useCaseName": {
+                              "type": "<string>",
+                              "content": "动态生成爬虫脚本"
+                            }}
+                          }],
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "INCLUDE USE CASE 动态生成爬虫脚本"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统将新生成的爬虫任务m部署到服务器节点s"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "系统将爬虫任务m和服务器节点s的关系对存入关系数据库MySQL"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "根据用户需要，生成一个新的爬虫任务并根据服务器负载以及任务类型将其部署到某一服务器"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
                   }
                 }
               }
