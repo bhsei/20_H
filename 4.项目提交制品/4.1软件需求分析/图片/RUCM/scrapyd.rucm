@@ -44,7 +44,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "QueryDaemonStatus"
+              "content": "查询守护进程状态"
             },
             "description": {
               "type": "<string>",
@@ -79,6 +79,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "查询守护进程状态"
                         }
                       }
                     }],
@@ -221,36 +251,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "查询守护进程状态"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -261,7 +261,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "ListAvailableSpiders"
+              "content": "列出可用爬虫"
             },
             "description": {
               "type": "<string>",
@@ -504,6 +504,36 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "取得指定项目的（最新）版本的可用的爬虫列表"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -629,36 +659,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "取得指定项目的（最新）版本的可用的爬虫列表"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -669,7 +669,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "ListCurrentJobs"
+              "content": "列出当前作业"
             },
             "description": {
               "type": "<string>",
@@ -796,6 +796,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "列出项目的处于等待、运行和完成的作业"
                         }
                       }
                     }],
@@ -955,36 +985,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "列出项目的处于等待、运行和完成的作业"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -995,7 +995,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "RunJob"
+              "content": "运行作业"
             },
             "description": {
               "type": "<string>",
@@ -1532,6 +1532,36 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "调度一个爬虫运行（也叫一个作业），返回这个作业的ID"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -1794,36 +1824,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "调度一个爬虫运行（也叫一个作业），返回这个作业的ID"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -1834,7 +1834,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "CancelJob"
+              "content": "取消作业"
             },
             "description": {
               "type": "<string>",
@@ -2169,6 +2169,72 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "取消一个爬虫（作业）的运行。"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "如果一个作业等待运行，该作业会从被移除。"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "如果作业正在运行，该作业会被中止"
+                          }
+                        }
+                      }
+                    ],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -2371,72 +2437,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "取消一个爬虫（作业）的运行。"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "如果一个作业等待运行，该作业会从被移除。"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "如果作业正在运行，该作业会被中止"
-                          }
-                        }
-                      }
-                    ],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -2447,7 +2447,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "ListProjects"
+              "content": "列出项目"
             },
             "description": {
               "type": "<string>",
@@ -2482,6 +2482,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "取得一个上传到该Scrapy服务器的项目列表"
                         }
                       }
                     }],
@@ -2560,36 +2590,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "取得一个上传到该Scrapy服务器的项目列表"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -2600,7 +2600,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "DeleteProject"
+              "content": "删除项目"
             },
             "description": {
               "type": "<string>",
@@ -2727,6 +2727,36 @@
                         "content": {
                           "type": "<string>",
                           "content": "系统处于工作状态"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "删除一个项目以及项目所有上传的版本"
                         }
                       }
                     }],
@@ -2899,36 +2929,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "删除一个项目以及项目所有上传的版本"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -2939,7 +2939,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "ListProjectVersion"
+              "content": "列出项目版本"
             },
             "description": {
               "type": "<string>",
@@ -3079,6 +3079,36 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "取得一个项目可用的版本列表，返回有序排列的版本，最后一个版本为当前使用的版本"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -3191,36 +3221,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "取得一个项目可用的版本列表，返回有序排列的版本，最后一个版本为当前使用的版本"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -3231,7 +3231,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "AddProjectVersion"
+              "content": "添加项目版本"
             },
             "description": {
               "type": "<string>",
@@ -3656,6 +3656,36 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [{
+                      "type": "Sentence",
+                      "content": {
+                        "name": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "description": {
+                          "type": "<string>",
+                          "content": ""
+                        },
+                        "content": {
+                          "type": "<string>",
+                          "content": "为一个项目添加一个爬虫版本，如果项目不存在则创建一个项目"
+                        }
+                      }
+                    }],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -3858,36 +3888,6 @@
                       }
                     ]
                   }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [{
-                      "type": "Sentence",
-                      "content": {
-                        "name": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "description": {
-                          "type": "<string>",
-                          "content": ""
-                        },
-                        "content": {
-                          "type": "<string>",
-                          "content": "为一个项目添加一个爬虫版本，如果项目不存在则创建一个项目"
-                        }
-                      }
-                    }],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
-                  }
                 }
               }
             }
@@ -3898,7 +3898,7 @@
           "content": {
             "name": {
               "type": "<string>",
-              "content": "DeleteProjectVersion"
+              "content": "删除项目版本"
             },
             "description": {
               "type": "<string>",
@@ -4323,6 +4323,55 @@
                     }
                   }
                 },
+                "briefDescription": {
+                  "type": "BriefDescription",
+                  "content": {
+                    "sentences": [
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "删除一个项目的版本。"
+                          }
+                        }
+                      },
+                      {
+                        "type": "Sentence",
+                        "content": {
+                          "name": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "description": {
+                            "type": "<string>",
+                            "content": ""
+                          },
+                          "content": {
+                            "type": "<string>",
+                            "content": "如果一个项目没有剩余的版本，则项目也会被删除。"
+                          }
+                        }
+                      }
+                    ],
+                    "name": {
+                      "type": "<string>",
+                      "content": ""
+                    },
+                    "description": {
+                      "type": "<string>",
+                      "content": ""
+                    }
+                  }
+                },
                 "basicFlow": {
                   "type": "BasicFlow",
                   "content": {
@@ -4524,55 +4573,6 @@
                         }
                       }
                     ]
-                  }
-                },
-                "briefDescription": {
-                  "type": "BriefDescription",
-                  "content": {
-                    "sentences": [
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "删除一个项目的版本。"
-                          }
-                        }
-                      },
-                      {
-                        "type": "Sentence",
-                        "content": {
-                          "name": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "description": {
-                            "type": "<string>",
-                            "content": ""
-                          },
-                          "content": {
-                            "type": "<string>",
-                            "content": "如果一个项目没有剩余的版本，则项目也会被删除。"
-                          }
-                        }
-                      }
-                    ],
-                    "name": {
-                      "type": "<string>",
-                      "content": ""
-                    },
-                    "description": {
-                      "type": "<string>",
-                      "content": ""
-                    }
                   }
                 }
               }
