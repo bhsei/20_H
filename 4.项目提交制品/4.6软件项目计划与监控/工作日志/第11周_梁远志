@@ -1,0 +1,95 @@
+<h1>工作日志</h1>
+<ul>
+    <li><strong>时间：</strong>2020/5/8</li>
+    <li><strong>周数：</strong>11</li>
+    <li><strong>姓名：</strong>梁远志</li>
+</ul>
+<table style="text-align:center">
+  <tr>
+    <th rowspan="2">属性</th>
+    <th rowspan="2">序号</th>
+    <th rowspan="2">工作内容</th>
+    <th rowspan="2">实际完成情况</th>
+    <th rowspan="2">耗费时间</th>
+    <th colspan="2">工作详情</th>
+    <th rowspan="2">备注</th>
+  </tr>
+  <tr>
+    <td>遇到的问题</td>
+    <td>处理情况</td>
+  </tr>
+  <tr>
+    <td rowspan="6">本周工作总结</td>
+    <td>1</td>
+    <td style="text-align:left">参加5月2日小组会</td>
+    <td style="text-align:left">讨论了项目的开发工作，能够基本完成任务创建到完成的流程</td>
+    <td>2h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td rowspan="6">本周工作总结</td>
+    <td>2</td>
+    <td style="text-align:left">参加5月6日小组会</td>
+    <td style="text-align:left">讨论了项目设计文档和本周的展示内容</td>
+    <td>2h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td style="text-align:left">进行Scheduler的开发工作</td>
+    <td style="text-align:left">适应了Django项目作出的变化</td>
+    <td>1h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td style="text-align:left">与赵正阳进行Scheduler和Django的联合调试</td>
+    <td style="text-align:left">发现并定位了若干变更导致的bug</td>
+    <td>2h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td style="text-align:left">增加Django项目的自动测试</td>
+    <td style="text-align:left">增加并测试了Django项目的自动测试CI</td>
+    <td>3h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td style="text-align:left">在部署服务器上部署Channels所需的环境</td>
+    <td style="text-align:left">在服务器上安装了Redis并和宋冰晨协调了Channels在后续部署的操作</td>
+    <td>0.5h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td style="text-align:left">撰写调度器的设计文档</td>
+    <td style="text-align:left">绘制了系统的状态图、调度器相关的组建图和任务流程的顺序图及相关文字描述</td>
+    <td>3h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td style="text-align:left">制作展示用的幻灯片</td>
+    <td style="text-align:left">制作了调度器部分展示用的幻灯片</td>
+    <td>1h</td>
+    <td>/</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+</table>
